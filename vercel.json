@@ -1,0 +1,19 @@
+{
+    "builds": [
+      {
+        "src": "pheonix/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/staticfiles/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "pheonix/wsgi.py"
+      }
+    ]
+  }
+  
