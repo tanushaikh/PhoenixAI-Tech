@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "pheonix/pheonix/wsgi.py",
+        "src": "pheonix/wsgi.py",
         "use": "@vercel/python"
       }
     ],
@@ -12,7 +12,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "pheonix/pheonix/wsgi.py"
+        "dest": "pheonix/wsgi.py"
       }
     ]
   }
